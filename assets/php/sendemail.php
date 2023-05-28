@@ -14,7 +14,7 @@
     $messageSend .= "<br>Сообщение: " . $message;
 
 
-    $success = mail("EMAIL", $subject, $messageSend, $headers);
+    $success = mail("admin@e-moonriver.ru", $subject, $messageSend, $headers);
 
     header("Location: ../../index.html");
     
