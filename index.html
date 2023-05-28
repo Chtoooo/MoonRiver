@@ -20,7 +20,12 @@
         <input type="name" name="nameModal" placeholder="Укажите ФИО" required>
         <input type="text" name="phoneModal" placeholder="Укажите телефон" required>
         <textarea placeholder="Укажите своё обращение" name="modalArea"></textarea>
-        <button type="submit">Отправить</button>
+        <div>
+          <input type="checkbox" id="checkbox" onchange="toggleSubmitButton()" required>
+          <a href="assets/file/Политика.pdf" download>Отправляю форму, вы соглашаетесь с политикой обратки
+            информации.</a>
+        </div>
+        <button type="submit" id="submit">Отправить</button>
       </form>
     </div>
   </div>
@@ -289,6 +294,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/modal.js"></script>
+  <script src="assets/js/form.js"></script>
 </body>
 
 </html>
